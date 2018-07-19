@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a {
+    text-decoration: none;
+    color: #057202;
+}
+
+a:hover {
+    color: #00cc00;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Open Sans", "verdana", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #EFEFEF;
+}
+
+h2 {
+    font-family: "Open Sans", "verdana", sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+    color: #00cc00;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    font-weight: 200;
+    z-index: 10;
+}
+
+nav img {
+    text-align: left;
+    vertical-align: middle;
+}
+
+nav ul {
+    width: 400px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em 1em;
+    border-bottom: 5px solid #fff;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid #00cc00;
+}
+
+nav a {
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+p {
+    color: #333;
+    font-size: larger;
+    font-family: "Open Sans", "verdana", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.block {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 2em 1em 2em;
+    vertical-align: top;
+}
+
+.clear {
+    clear: both;
+}
+
+.email, .typo {
+    background-color: #000;
+}
+
+.grey-bg {
+    background-color: #ddd;
+}
+
+.print, .mobile {
+    background-color: #00cc00;
+}
+
+.web, .photo, .identity {
+    background-color: #057202;
+}
+
+.subhead {
+    font-family: "Open Sans", "verdana", sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #6a6a6a;
+}
+
+.targetDiv img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* for IE8 and older */
+    vertical-align: middle;
+}
+
+.targetDiv img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#about {
+    display: block;
+    padding-bottom: 3em;
+}
+
+#about article h3, #contact article h3, #portfolio article h3 {
+    font-size: 2em;
+    font-weight: lighter;
+    color: #333;
+}
+
+#contact {
+    padding-bottom: 5em;   
+}
+
+#gallery {
+    display: inline-block;
+}
+
+#home {
+    background: url('/img/bannerGreen.jpg') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    color: #fff;
+    display: block;
+}
+
+#home h1 {
+    padding: .75em 0;
+    font-size: 12em;
+    font-weight: lighter;
+}
+
+#portfolio {
+    display: inline-block;
+    padding-bottom: 3em;
+}
+
+#portfolio a {
+    font-size: larger;
+    color: #333;
+}
+
+#portfolio a:hover {
+    text-decoration: none;
+    color: #999;
+}
+
+#portfolio hgroup a {
+    text-decoration: none;
+    color: #057202;
+}
+
+#portfolio hgroup a:hover {
+    color: #00cc00;
+    text-decoration: underline;
+}
+
+#portfolio li {
+    display: inline-block;
+    width: 150px;
+    padding: 1.5em 0; 
+}
+
+#portfolio li:hover {
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+#portfolio .targetDiv {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 1.5em;
+}
+
+@media all and (max-width: 850px) and (min-width: 600px) {
+    #home h1 {
+        padding: .5em 0;
+        font-size: 8em;
+        font-weight: lighter;
+    }
+}
+
+@media all and (max-width: 599px) {
+    #home h1 {
+        padding: 1.25em 0 .5em 0;
+        font-size: 5em;
+        font-weight: lighter;
+    }
+
+    nav ul {
+        margin: auto !important;
+        width: 325px;
+    }
+}

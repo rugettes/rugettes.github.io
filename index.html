@@ -1,0 +1,228 @@
+<!doctype html>
+<!--[if lt IE 7]> <html xml:lang="en" lang="en" class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html xml:lang="en" lang="en" class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html xml:lang="en" lang="en" class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xml:lang="en" lang="en" class="">
+<!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+        
+        <title>RachelLense.com</title>
+        <meta name="description" content="Rachel Lense's personal portfolio site featuring both professional and fictitious works.">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/boilerplate.css" rel="stylesheet" type="text/css" >
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,200,100' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-1.11.0.min.js" language="JavaScript" type="text/javascript"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script type="text/javascript">
+            document.createElement("article");
+            document.createElement("footer");
+            document.createElement("header");
+            document.createElement("hgroup");
+            document.createElement("main");
+            document.createElement("nav");
+            document.createElement("section");
+        
+            window.onload=function() {
+                $('.show').click(function () {
+                    $('.targetDiv').hide();
+                    $('.div' + $(this).attr('target')).show();
+                });
+                
+                $('.hide').click(function () {
+                    $('#div' + $(this).attr('target')).hide();
+                });
+                
+                $('#all').click(function() {
+                $('.targetDiv').show();
+                });
+                
+                $(function() {
+                  $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('html,body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                  });
+                });
+            } 
+        </script>
+    </head>
+
+    <div id="outside">
+        
+    <body>
+        
+        <nav>
+            <a href="#">
+                <img src="img/logo.jpg" alt="RachelLense.com logo" />
+            </a>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            
+            <section id="home" name="home">
+                <h1>WELCOME!</h1>
+            </section>
+            
+            <section id="about" name="about">
+                <hgroup>
+                    <h2>ABOUT</h2>
+                    <h3 class="subhead">My name is Rachel Lense and <span style="font-weight: 400;">development &amp; design</span> are my thing.</h3>
+                </hgroup>
+                <div class="grey-bg">
+                    <article class="block">
+                        <h3>Creative</h3>
+                        <p>From a very young age, I have been fueled by imagination. Whether it was building great Lego kingdoms in the living room or solving riddles in the dark with Bilbo, my inventiveness has matured with me. I have become a creative problem-solver with the ability to analyze problems from myriad perspectives and find solutions where others cannot.</p>
+                    </article>
+                    <article class="block">
+                        <h3>Hard-Working</h3>
+                        <p>If growing up in the upper Midwest has taught me one thing, it is the power of honest hard-work. It is nearly impossible for me to give less than my very best on any project, and although some call it perfectionism, I call it a good work ethic.</p>
+                    </article>
+                    <article class="block">
+                        <h3>Personable</h3>
+                        <p>Hard-working, yes, but personable, too. I will talk with you, not at you, and will strive to give you understanding of the work that I do. Respect for other people is one of my highest personal standards. Where there is respect, there is patience, kindness, and honesty.</p>
+                    </article>
+                </div>
+            </section>
+            
+            <section id="portfolio" name="portfolio">
+                <hgroup>
+                    <h2>PORTFOLIO</h2>
+                    <h3 class="subhead">Websites</h3>
+                    <article class="block">
+                        <h3>rachellense.com/wordpress</h3>
+                        <p>The team I currently work with at 3M emphasizes the importance of new technology by setting aside time to learn relevant skills together. One of our most recent efforts was working with WordPress.org. We downloaded the open source code provided on their website as well as the appropriate programs to turn our laptops into servers, edited themes, and worked on creating our own local WordPress sites. However, since I pay for space on a Blue Host server, I decided to take it one step further and learned how to transfer the in-progress WordPress site from my local computer to the server this website uses. The process was daunting, but rewarding, forcing me to learn about things like SQL tables, encryption, and certificates. Check out the unfinished version of my portfolio as a completely self-hosted WordPress.org site below.</p>
+                        <a href="http://www.rachellense.com/wordpress" target="_blank">Click here to view</a>
+                    </article>
+                    <article class="block">
+                        <h3>dishformyrv.com</h3>
+                        <p>Shortly after graduating college, I worked for a small, privately-owned electronics company in Rochester, MN called Pace International. One of their largest sources of revenue was from selling DISH network programming and satellites for recreational vehicles on a website called dishformyrv.com. While there, I was tasked with completely overhauling the website's most popular page to be responsive and written in HTML5/CSS3. Although the dishformyrv.com website has since been redone, the hand-coded Learn More page can still be found on the web archive, as referenced below.</p>
+                        <a href="/dishformyrv/programming.php" target="_blank">Click here to view</a>
+                    </article>
+                    <article class="block">
+                        <h3>3mcanada.ca</h3>
+                        <p>A good portion of my current job involves working with JavaScript libraries such as jQuery, RequireJS, and Backbone to solve problems or create new functionality requested by different businesses. One of the first full modules I was tasked with developing regarded a complicated legal matter only applicable to French Canada. Apparently, they have their own version of the trademark symbol (the marques de commerce or <sup>MC</sup>) that the businesses had been representing in their data with the letters MC in parentheses. However, there seems to be some legal complications with this because it's not technically the correct representation of the trademark, so instead of taking the time to change thousands of product names and hundreds of web pages, it was up to me to write some tricky JavaScript involving regular expressions to analyze any page in the French Canada locale, find all instances of (MC) being rendered, and replace it with its superscript version, sans parentheses. Watch it in action below.</p>
+                        <a href="http://www.3mcanada.ca/3M/fr_CA/worker-health-safety-ca/products/protective-eyewear/scotchgard-anti-fog-coating/" target="_blank">Click here to view</a>
+                    </article>
+                </hgroup>
+
+                <h3 class="subhead">But because my interests are as varied as today's media, I have developed and designed for more than just the web.</h3>
+                
+                <ul>
+                    <a id="all"><li>All</li></a>
+                    <a class="show" target="3"><li>Email</li></a>
+                    <a class="show" target="4"><li>Print</li></a>
+                    <a class="show" target="5"><li>Photography</li></a>
+                    <a class="show" target="6"><li>Typography</li></a>
+                    <a class="show" target="7"><li>Mobile</li></a>
+                    <a class="show" target="8"><li>Identity</li></a>
+                </ul>
+                
+                <div id="gallery">
+                    <div class="targetDiv identity div8">
+                        <a href="img/identity2Big.jpg" data-lightbox="image-1" data-title="Tasked in a class assignment with branding the specifics of a cruise ship company called Young Cruise Lines, I imagined a luxury space cruise-liner going on interplanetary excursions for one of my classes. This is the identity system I created to accompany it.">
+                            <img src="img/identity2.jpg" alt="Young Cruise Lines Identity System">
+                        </a>
+                    </div>
+                    <div class="targetDiv email div3">
+                        <a href="img/email1Big.jpg" data-lightbox="image-3" data-title="This was an email I created while at Pace International to promote DeWalt's line of power tools. The header background was created using a combination of different brushes and effects in Photoshop.">
+                            <img src="img/email1.jpg" alt="DeWalt Email">
+                        </a>
+                    </div>
+                    <div class="targetDiv print div4">
+                        <a href="img/print1Big.jpg" data-lightbox="image-4" data-title="This is a sampling of Pace International's spring 2014 catalog that I was part of. I helped to design and update all of the graphics involved, from photo editing to color scheme.">
+                            <img src="img/print1.jpg" alt="2014 Pace International Spring Catalog">
+                        </a>
+                    </div>
+                    <div class="targetDiv print div4">
+                        <a href="img/print2Big.jpg" data-lightbox="image-6" data-title="This is a promotional piece I created to help introduce The Smart List, an Angie's List-type website that helps satellite dish operators get connected with installers that are certified in the areas specified by the user.">
+                            <img src="img/print2.jpg" alt="The Smart List Promotional Flyer">
+                        </a>
+                    </div>
+                    <div class="targetDiv photo div5">
+                        <a href="img/photo1Big.jpg" data-lightbox="image-7" data-title="Entitled 'Cloister at Magdalen College,' this photo was taken inside one of the quads of a pristine college campus at Oxford University and was one of my first published pieces.">
+                            <img src="img/photo1.jpg" alt="Cloister at Magdalen College">
+                        </a>
+                    </div>
+                    <div class="targetDiv typo div6">
+                        <a href="img/typo1Big.jpg" data-lightbox="image-8" data-title="This favorite piece of mine was produced with a combination of Photoshop and Illustrator. I designed custom brushes and used detailed texture, gradient, and lighting effects to create the final product.">
+                            <img src="img/typo1.jpg" alt="Dragons Typography">
+                        </a>
+                    </div>
+                    <div class="targetDiv mobile div7">
+                        <a href="img/mobile1Big.jpg" data-lightbox="image-9" data-title="The Rourke Art Gallery & Museum Mobile App is an app I created using PhoneGap to augment the museum-goer's experiences with some of the most impressive pieces offered at the time. I created it in conjunction with my senior project at Minnesota State University Moorhead.">
+                            <img src="img/mobile1.jpg" alt="The Rourke Art Gallery & Museum Mobile App">
+                        </a>
+                    </div>
+                    <div class="targetDiv photo div5">
+                        <a href="img/photo2Big.jpg" data-lightbox="image-10" data-title="This image, created for my black and white photography class, consists of two separate pieces of film developed on top of each other, &agrave la Clarence John Laughlin, to create a photograph that looks concurrently deep and shallow. It's titled 'The Water Grave' and was featured in the 2012 issue of Minnesota State University Moorhead's <i>Red Weather Magazine</i>.">
+                            <img src="img/photo2.jpg" alt="The Water Grave">
+                        </a>
+                    </div>
+                    <div class="targetDiv typo div6">
+                        <a href="img/typo2Big.jpg" data-lightbox="image-11" data-title="Unlike the other typography piece in my gallery, this one was created solely in Photoshop. It is mainly built with basic font and overlapping geometric structures that have been manipulated and textured to give it that dirty, steam-punk feel. The font was inspired by the works of Sir Arthur Conan Doyle.">
+                            <img src="img/typo2.jpg" alt="Holmes, as in Sherlock Holmes">
+                        </a>
+                    </div>
+                    <div class="targetDiv mobile div7">
+                        <a href="img/mobile2Big.jpg" data-lightbox="image-12" data-title="This mobile app was a collaborative effort with my friend, Jordan Hanson, for our mobile app development class. He built much of the structure and provided most of the content whereas I created the design and coded the functionality. It is based off the book, <i>The Zombie Survival Guide</i>, by Max Brooks.">
+                            <img src="img/mobile2.jpg" alt="How to Train a Zombie Killer Mobile App">
+                        </a>
+                    </div>
+                    <div class="targetDiv email div3">
+                        <a href="img/email2Big.jpg" data-lightbox="image-13" data-title="This email was sent from Pace International to promote part of a head end, a very large piece of equipment used in Multiple Dwelling Units (MDUs) to enable large numbers of people to watch satellite TV at the same time.">
+                            <img src="img/email2.jpg" alt="DISH QAM Email">
+                        </a>
+                    </div>
+                    <div class="targetDiv identity div8">
+                        <a href="img/identity1Big.jpg" data-lightbox="image-14" data-title="Carrots & Circuses is a fictional children's educational television network I designed for a class based on the words 'carrot' and 'circus' that were pulled from a hat. To me, these words represented things that were both fun and nutritious.">
+                            <img src="img/identity1.jpg" alt="Carrots & Circuses Identity System">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="contact" name="contact">
+                <hgroup>
+                    <h2>CONTACT</h2>
+                    <h3 class="subhead">I currently work and live in Saint Paul.</h3>
+                </hgroup>
+                <article>
+                    <h3>Get in touch!</h3>
+                    <p>Phone: 701.212.2143<br>
+                    Email: <a href="mailto:rlense88@gmail.com">rlense88@gmail.com</a><br>
+                    Web: <a href="https://www.linkedin.com/in/rachel-lense" target="_blank">linkedin.com/in/rachel-lense</a></p>
+                    <p><strong>View and download my r&eacute;sum&eacute; <a href="RachelLenseResume.pdf" target=_new>here</a>.</strong></p>
+                </article>
+                
+                
+            </section>
+        
+        </main>
+        
+    </body>        
+            
+    </div>
+    
+</html>
